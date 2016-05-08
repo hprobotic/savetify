@@ -1,12 +1,14 @@
-node-spotify-web
+Spotify Download Tool
 ================
+
 ### Node.js implementation of the Spotify Web protocol
+
 
 This module implements the "Spotify Web" WebSocket protocol that is used on
 Spotify's [Web UI](http://play.spotify.com).
 
-This module is heavily inspired by the original open-source Python implementation:
-[Hexxeh/spotify-websocket-api](https://github.com/Hexxeh/spotify-websocket-api).
+This module is heavily inspired by the original node module: [node-spotify-web](https://github.com/TooTallNate/node-spotify-web)
+
 
 Installation
 ------------
