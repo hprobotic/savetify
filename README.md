@@ -44,6 +44,14 @@ $ python renamer.py
 
 => Credit for @redphx
 
+3. GIF
+
+Here's a walkthrough:
+
+![](savetify.gif)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
 License
 -------
 
