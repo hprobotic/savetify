@@ -10,57 +10,37 @@ This module is heavily inspired by the original open-source Python implementatio
 
 Installation
 ------------
-
+1. Node.js: https://nodejs.org/en/download/
+2. Python 2.7.9 or newer: https://www.python.org/downloads/
+3. Run bash:
 ``` bash
-$ npm install spotify-web
+$ npm install // Install all node modules
 ```
+``` bash
+$ pip install eyed3
+$ pip install spotipy
+```
+4. Add your spotify authentication info to login.js file
 
 
-Example
+Use Example
 -------
-
-Here's an example of logging in to the Spotify server and creating a session. Then
-requesting the metadata for a given track URI, and playing the track audio file
-through the speakers:
-
-``` javascript
-var lame = require('lame');
-var Speaker = require('speaker');
-var Spotify = require('spotify-web');
-var uri = process.argv[2] || 'spotify:track:6tdp8sdXrXlPV6AZZN2PE8';
-
-// Spotify credentials...
-var username = process.env.USERNAME;
-var password = process.env.PASSWORD;
-
-Spotify.login(username, password, function (err, spotify) {
-  if (err) throw err;
-
-  // first get a "Track" instance from the track URI
-  spotify.get(uri, function (err, track) {
-    if (err) throw err;
-    console.log('Playing: %s - %s', track.artist[0].name, track.name);
-
-    // play() returns a readable stream of MP3 audio data
-    track.play()
-      .pipe(new lame.Decoder())
-      .pipe(new Speaker())
-      .on('finish', function () {
-        spotify.disconnect();
-      });
-
-  });
-});
+1. Use terminal cd to savetify folder then run command:
+``` bash
+$ node download // Download single track by TrackID, spotify URI or track URL
+```
+or 
+``` bash
+$ node playlist // Download all track in playlist by playlist URI
 ```
 
-See the `example` directory for some more example code.
+2. After completed step 1, all track will be saved in /downloaded folder, but still missing track metadata. For update metadata.
+``` bash
+$ cd /renamer
+$ python renamer.py 
+```
 
-
-API
----
-
-TODO: document!
-
+=> Credit for @redphx
 
 License
 -------
