@@ -1,5 +1,5 @@
 var login = {
-  username: 'hprobotic',
-  password: 'Babynoob@123'
+  username: 'username',
+  password: 'password'
 }
 module.exports = login;
