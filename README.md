@@ -35,15 +35,12 @@ or
 ``` bash
 $ node playlist // Download all track in playlist by playlist URI
 ```
-
 2. After completed step 1, all track will be saved in /downloaded folder, but still missing track metadata. For update metadata.
 ``` bash
 $ cd /renamer
 $ python renamer.py 
 ```
-
 => Credit for @redphx
-
 3. GIF
 
 Here's a walkthrough:
