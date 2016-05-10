@@ -15,41 +15,41 @@ Installation
 1. Node.js: https://nodejs.org/en/download/
 2. Python 2.7.9 or newer: https://www.python.org/downloads/
 3. Run bash:
-``` bash
-$ npm install // Install all node modules
-```
-``` bash
-$ pip install eyed3
-$ pip install spotipy
-```
+  ``` bash
+  $ npm install // Install all node modules
+  ```
+  ``` bash
+  $ pip install eyed3
+  $ pip install spotipy
+  ```
 4. Add your spotify authentication info to login.js file
 
 
 Use Example
 -------
 1. Use terminal cd to savetify folder then run command:
-``` bash
-$ node download // Download single track by TrackID, spotify URI or track URL
-```
-or 
-``` bash
-$ node playlist // Download all track in playlist by playlist URI
-```
+  ``` bash
+  $ node download // Download single track by TrackID, spotify URI or track URL
+  ```
+  or 
+  ``` bash
+  $ node playlist // Download all track in playlist by playlist URI
+  ```
 
 2. After completed step 1, all track will be saved in /downloaded folder, but still missing track metadata. For update metadata.
-``` bash
-$ cd /renamer
-$ python renamer.py 
-```
+  ``` bash
+  $ cd /renamer
+  $ python renamer.py 
+  ```
 => Credit for @redphx
 
 3. GIF
 
-Here's a walkthrough:
-
-![](savetify.gif)
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+  Here's a walkthrough:
+  
+  ![](savetify.gif)
+  
+  GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 License
 -------
