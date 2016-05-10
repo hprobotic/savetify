@@ -29,11 +29,7 @@ Use Example
 -------
 1. Use terminal cd to savetify folder then run command:
   ``` bash
-  $ node download // Download single track by TrackID, spotify URI or track URL
-  ```
-  or 
-  ``` bash
-  $ node playlist // Download all track in playlist by playlist URI
+  $ node download // Download single track by spotify Track URI, Playlist URI or Album URI
   ```
 
 2. After completed step 1, all track will be saved in /downloaded folder, but still missing track metadata. For update metadata.
