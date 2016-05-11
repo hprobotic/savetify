@@ -82,7 +82,7 @@ if __name__ == "__main__":
   if len(sys.argv) >= 2:
     input_dir = sys.argv[1]
   else:
-    input_dir = '../downloaded'
+    input_dir = 'downloaded'
     if not os.path.exists(input_dir):
       os.makedirs(input_dir)
 
